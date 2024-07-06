@@ -1,0 +1,52 @@
+uuid: 31a5193f-9595-4f87-a86b-16ac3e810311
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.ingredients.field_abv
+    - taxonomy.vocabulary.ingredients
+  module:
+    - path
+    - text
+id: taxonomy_term.ingredients.default
+targetEntityType: taxonomy_term
+bundle: ingredients
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_abv:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

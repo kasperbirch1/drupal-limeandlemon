@@ -1,0 +1,33 @@
+uuid: 784faa39-96da-4163-a7dd-1b4db9b53175
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.ingredients.field_abv
+    - taxonomy.vocabulary.ingredients
+  module:
+    - text
+id: taxonomy_term.ingredients.default
+targetEntityType: taxonomy_term
+bundle: ingredients
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_abv:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }
