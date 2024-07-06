@@ -1,0 +1,23 @@
+uuid: 17007646-d47f-4c24-a667-7e05c5ea0737
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ingredient_volume
+    - paragraphs.paragraphs_type.recipe_ingredient
+id: paragraph.recipe_ingredient.field_ingredient_volume
+field_name: field_ingredient_volume
+entity_type: paragraph
+bundle: recipe_ingredient
+label: 'Ingredient volume'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: null
+  prefix: ''
+  suffix: cl
+field_type: decimal

@@ -1,0 +1,33 @@
+uuid: 82c42581-4439-4913-a961-4223e9dd53d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.recipe_ingredient.field_ingredient
+    - field.field.paragraph.recipe_ingredient.field_ingredient_volume
+    - paragraphs.paragraphs_type.recipe_ingredient
+id: paragraph.recipe_ingredient.default
+targetEntityType: paragraph
+bundle: recipe_ingredient
+mode: default
+content:
+  field_ingredient:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ingredient_volume:
+    type: number
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

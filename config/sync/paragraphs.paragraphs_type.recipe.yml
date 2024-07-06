@@ -1,0 +1,10 @@
+uuid: c0e49743-e24b-4f76-a4d5-0c86ed310e0b
+langcode: en
+status: true
+dependencies: {  }
+id: recipe
+label: Recipe
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

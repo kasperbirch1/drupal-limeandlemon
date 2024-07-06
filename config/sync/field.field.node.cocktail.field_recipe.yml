@@ -1,0 +1,34 @@
+uuid: 89b149db-4ea7-4151-9da1-b88662fb635e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recipe
+    - node.type.cocktail
+    - paragraphs.paragraphs_type.recipe
+  module:
+    - entity_reference_revisions
+id: node.cocktail.field_recipe
+field_name: field_recipe
+entity_type: node
+bundle: cocktail
+label: Recipe
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      recipe: recipe
+    negate: 0
+    target_bundles_drag_drop:
+      recipe:
+        weight: 4
+        enabled: true
+      recipe_ingredient:
+        weight: 3
+        enabled: false
+field_type: entity_reference_revisions
